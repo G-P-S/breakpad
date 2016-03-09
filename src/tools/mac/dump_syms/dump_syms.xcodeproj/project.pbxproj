@@ -56,9 +56,6 @@
 		B88FB00F116BDEA700407530 /* stabs_reader_unittest.cc in Sources */ = {isa = PBXBuildFile; fileRef = B88FB003116BDE7200407530 /* stabs_reader_unittest.cc */; };
 		B88FB010116BDEA700407530 /* stabs_reader.cc in Sources */ = {isa = PBXBuildFile; fileRef = B88FAE3911666C6F00407530 /* stabs_reader.cc */; };
 		B88FB028116BE03100407530 /* test_assembler.cc in Sources */ = {isa = PBXBuildFile; fileRef = B88FAE0911665B5700407530 /* test_assembler.cc */; };
-		B88FB029116BE03100407530 /* gmock-all.cc in Sources */ = {isa = PBXBuildFile; fileRef = B89E0EA311665AEA00DD08C9 /* gmock-all.cc */; };
-		B88FB02A116BE03100407530 /* gtest_main.cc in Sources */ = {isa = PBXBuildFile; fileRef = B89E0E9F11665AC300DD08C9 /* gtest_main.cc */; };
-		B88FB02B116BE03100407530 /* gtest-all.cc in Sources */ = {isa = PBXBuildFile; fileRef = B89E0EA011665AC300DD08C9 /* gtest-all.cc */; };
 		B88FB03F116BE24200407530 /* libgtestmockall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B88FB024116BDFFF00407530 /* libgtestmockall.a */; };
 		B88FB042116BE3C400407530 /* libgtestmockall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B88FB024116BDFFF00407530 /* libgtestmockall.a */; };
 		B88FB057116C0CDE00407530 /* libgtestmockall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B88FB024116BDFFF00407530 /* libgtestmockall.a */; };
@@ -887,6 +884,8 @@
 /* Begin PBXProject section */
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "dump_syms" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -973,9 +972,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B88FB028116BE03100407530 /* test_assembler.cc in Sources */,
-				B88FB029116BE03100407530 /* gmock-all.cc in Sources */,
-				B88FB02A116BE03100407530 /* gtest_main.cc in Sources */,
-				B88FB02B116BE03100407530 /* gtest-all.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1350,6 +1346,7 @@
 		B88FB025116BE00100407530 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					$inherited,
 					../../../testing,
@@ -1358,12 +1355,14 @@
 					../../../testing/gtest/include,
 				);
 				PRODUCT_NAME = gtestmockall;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		B88FB026116BE00100407530 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					$inherited,
 					../../../testing,
@@ -1372,6 +1371,7 @@
 					../../../testing/gtest/include,
 				);
 				PRODUCT_NAME = gtestmockall;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -1574,14 +1574,18 @@
 		B89E0E761166575300DD08C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_VERSION = "";
 				PRODUCT_NAME = macho_dump;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		B89E0E771166575300DD08C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_VERSION = "";
 				PRODUCT_NAME = macho_dump;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
