@@ -43,6 +43,9 @@
 		163201D71443019E00C4DBF5 /* ConfigFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 163201D51443019E00C4DBF5 /* ConfigFile.mm */; };
 		163201E31443029300C4DBF5 /* ConfigFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 163201D51443019E00C4DBF5 /* ConfigFile.mm */; };
 		1632D9E01C90CEF800831C59 /* minidump_file_writer.cc in Sources */ = {isa = PBXBuildFile; fileRef = F92C538F0ECCE70A009BE4BA /* minidump_file_writer.cc */; };
+		1632DB0B1C90FA0000831C59 /* OnDemandServer.mm in Sources */ = {isa = PBXBuildFile; fileRef = F92C56320ECD0DF1009BE4BA /* OnDemandServer.mm */; };
+		1632DC3F1C90FC7800831C59 /* string_conversion.cc in Sources */ = {isa = PBXBuildFile; fileRef = F92C53850ECCE6AD009BE4BA /* string_conversion.cc */; };
+		1632DC401C90FC8F00831C59 /* convert_UTF.c in Sources */ = {isa = PBXBuildFile; fileRef = F92C53870ECCE6C0009BE4BA /* convert_UTF.c */; };
 		168C079D1C8F701D0038AE29 /* ConfigFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 163201D51443019E00C4DBF5 /* ConfigFile.mm */; };
 		168C079E1C8F701D0038AE29 /* crash_generation_client.cc in Sources */ = {isa = PBXBuildFile; fileRef = D2F9A4C6121336C7002747C1 /* crash_generation_client.cc */; };
 		168C079F1C8F701D0038AE29 /* crash_generation_server.cc in Sources */ = {isa = PBXBuildFile; fileRef = D2F9A4C8121336C7002747C1 /* crash_generation_server.cc */; };
@@ -1733,7 +1736,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1632D9E01C90CEF800831C59 /* minidump_file_writer.cc in Sources */,
+				1632DB0B1C90FA0000831C59 /* OnDemandServer.mm in Sources */,
 				168C079D1C8F701D0038AE29 /* ConfigFile.mm in Sources */,
 				168C079E1C8F701D0038AE29 /* crash_generation_client.cc in Sources */,
 				168C079F1C8F701D0038AE29 /* crash_generation_server.cc in Sources */,
@@ -1741,7 +1744,10 @@
 				168C07A31C8F701D0038AE29 /* dynamic_images.cc in Sources */,
 				168C07A41C8F701D0038AE29 /* exception_handler.cc in Sources */,
 				168C07A51C8F701D0038AE29 /* minidump_generator.cc in Sources */,
+				1632D9E01C90CEF800831C59 /* minidump_file_writer.cc in Sources */,
 				168C07A61C8F701D0038AE29 /* protected_memory_allocator.cc in Sources */,
+				1632DC401C90FC8F00831C59 /* convert_UTF.c in Sources */,
+				1632DC3F1C90FC7800831C59 /* string_conversion.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
