@@ -42,6 +42,7 @@
 		163201D61443019E00C4DBF5 /* ConfigFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 163201D41443019E00C4DBF5 /* ConfigFile.h */; };
 		163201D71443019E00C4DBF5 /* ConfigFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 163201D51443019E00C4DBF5 /* ConfigFile.mm */; };
 		163201E31443029300C4DBF5 /* ConfigFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 163201D51443019E00C4DBF5 /* ConfigFile.mm */; };
+		1632D9E01C90CEF800831C59 /* minidump_file_writer.cc in Sources */ = {isa = PBXBuildFile; fileRef = F92C538F0ECCE70A009BE4BA /* minidump_file_writer.cc */; };
 		168C079D1C8F701D0038AE29 /* ConfigFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 163201D51443019E00C4DBF5 /* ConfigFile.mm */; };
 		168C079E1C8F701D0038AE29 /* crash_generation_client.cc in Sources */ = {isa = PBXBuildFile; fileRef = D2F9A4C6121336C7002747C1 /* crash_generation_client.cc */; };
 		168C079F1C8F701D0038AE29 /* crash_generation_server.cc in Sources */ = {isa = PBXBuildFile; fileRef = D2F9A4C8121336C7002747C1 /* crash_generation_server.cc */; };
@@ -1732,6 +1733,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1632D9E01C90CEF800831C59 /* minidump_file_writer.cc in Sources */,
 				168C079D1C8F701D0038AE29 /* ConfigFile.mm in Sources */,
 				168C079E1C8F701D0038AE29 /* crash_generation_client.cc in Sources */,
 				168C079F1C8F701D0038AE29 /* crash_generation_server.cc in Sources */,
