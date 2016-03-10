@@ -60,12 +60,13 @@ config.h
 stamp-h1
 
 # Ignore GYP generated Visual Studio artifacts.
-*.filters
-*.sdf
-*.sln
-*.suo
-*.vcproj
-*.vcxproj
+## Now, we will check in these so people don't have to use GYP
+#*.filters
+#*.sdf
+#*.sln
+#*.suo
+#*.vcproj
+#*.vcxproj
 
 # Ignore GYP generated Makefiles
 src/Makefile
