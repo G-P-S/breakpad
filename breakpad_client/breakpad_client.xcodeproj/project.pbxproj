@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1632DD5B1C90FD6800831C59 /* minidump_file_writer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1632DD5A1C90FD6800831C59 /* minidump_file_writer.cc */; };
+		1632DD5D1C90FD8100831C59 /* convert_UTF.c in Sources */ = {isa = PBXBuildFile; fileRef = 1632DD5C1C90FD8100831C59 /* convert_UTF.c */; };
+		1632DD5F1C90FD9E00831C59 /* string_conversion.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1632DD5E1C90FD9E00831C59 /* string_conversion.cc */; };
+		1632DD611C90FE1600831C59 /* simple_string_dictionary.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1632DD601C90FE1600831C59 /* simple_string_dictionary.cc */; };
+		1632DD631C90FE3F00831C59 /* launch_reporter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1632DD621C90FE3F00831C59 /* launch_reporter.cc */; };
+		1632DE7E1C90FEE300831C59 /* MachIPC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1632DE7D1C90FEE300831C59 /* MachIPC.mm */; };
+		1632DE801C90FF1800831C59 /* crash_generation_client.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1632DE7F1C90FF1800831C59 /* crash_generation_client.cc */; };
+		1632DE821C90FF1F00831C59 /* crash_generation_server.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1632DE811C90FF1F00831C59 /* crash_generation_server.cc */; };
+		1632DE841C90FF5900831C59 /* macho_id.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1632DE831C90FF5900831C59 /* macho_id.cc */; };
+		1632DE861C90FF9500831C59 /* macho_utilities.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1632DE851C90FF9500831C59 /* macho_utilities.cc */; };
+		1632DE881C90FF9E00831C59 /* macho_walker.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1632DE871C90FF9E00831C59 /* macho_walker.cc */; };
+		1632DE8A1C91000200831C59 /* file_id.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1632DE891C91000200831C59 /* file_id.cc */; };
+		1632DE8C1C91001E00831C59 /* md5.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1632DE8B1C91001E00831C59 /* md5.cc */; };
+		1632DE8E1C91004800831C59 /* bootstrap_compat.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1632DE8D1C91004800831C59 /* bootstrap_compat.cc */; };
+		168C0A201C8F84C10038AE29 /* breakpad_nlist_64.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168C0A1B1C8F84C10038AE29 /* breakpad_nlist_64.cc */; };
+		168C0A211C8F84C10038AE29 /* dynamic_images.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168C0A1C1C8F84C10038AE29 /* dynamic_images.cc */; };
+		168C0A221C8F84C10038AE29 /* exception_handler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168C0A1D1C8F84C10038AE29 /* exception_handler.cc */; };
+		168C0A231C8F84C10038AE29 /* minidump_generator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168C0A1E1C8F84C10038AE29 /* minidump_generator.cc */; };
+		168C0A241C8F84C10038AE29 /* protected_memory_allocator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 168C0A1F1C8F84C10038AE29 /* protected_memory_allocator.cc */; };
+		16E4AA661C8FFEB300ABA7E5 /* arch_utilities.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E4AA641C8FFEB300ABA7E5 /* arch_utilities.cc */; };
+		16E4AA671C8FFEB300ABA7E5 /* string_utilities.cc in Sources */ = {isa = PBXBuildFile; fileRef = 16E4AA651C8FFEB300ABA7E5 /* string_utilities.cc */; };
+		16E4ABD91C90A46B00ABA7E5 /* libbreakpad_client.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 168C0A141C8F84860038AE29 /* libbreakpad_client.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		16E4AB8B1C90986D00ABA7E5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SRCROOT)/../../../$(GOPRO_LIBS_DIR_NAME)";
+			dstSubfolderSpec = 0;
+			files = (
+				16E4ABD91C90A46B00ABA7E5 /* libbreakpad_client.a in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1632DD5A1C90FD6800831C59 /* minidump_file_writer.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = minidump_file_writer.cc; path = ../src/client/minidump_file_writer.cc; sourceTree = "<group>"; };
+		1632DD5C1C90FD8100831C59 /* convert_UTF.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = convert_UTF.c; path = ../src/common/convert_UTF.c; sourceTree = "<group>"; };
+		1632DD5E1C90FD9E00831C59 /* string_conversion.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = string_conversion.cc; path = ../src/common/string_conversion.cc; sourceTree = "<group>"; };
+		1632DD601C90FE1600831C59 /* simple_string_dictionary.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = simple_string_dictionary.cc; path = ../src/common/simple_string_dictionary.cc; sourceTree = "<group>"; };
+		1632DD621C90FE3F00831C59 /* launch_reporter.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = launch_reporter.cc; path = ../src/common/mac/launch_reporter.cc; sourceTree = "<group>"; };
+		1632DE7D1C90FEE300831C59 /* MachIPC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = MachIPC.mm; path = ../src/common/mac/MachIPC.mm; sourceTree = "<group>"; };
+		1632DE7F1C90FF1800831C59 /* crash_generation_client.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = crash_generation_client.cc; path = ../src/client/mac/crash_generation/crash_generation_client.cc; sourceTree = "<group>"; };
+		1632DE811C90FF1F00831C59 /* crash_generation_server.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = crash_generation_server.cc; path = ../src/client/mac/crash_generation/crash_generation_server.cc; sourceTree = "<group>"; };
+		1632DE831C90FF5900831C59 /* macho_id.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = macho_id.cc; path = ../src/common/mac/macho_id.cc; sourceTree = "<group>"; };
+		1632DE851C90FF9500831C59 /* macho_utilities.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = macho_utilities.cc; path = ../src/common/mac/macho_utilities.cc; sourceTree = "<group>"; };
+		1632DE871C90FF9E00831C59 /* macho_walker.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = macho_walker.cc; path = ../src/common/mac/macho_walker.cc; sourceTree = "<group>"; };
+		1632DE891C91000200831C59 /* file_id.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = file_id.cc; path = ../src/common/mac/file_id.cc; sourceTree = "<group>"; };
+		1632DE8B1C91001E00831C59 /* md5.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = md5.cc; path = ../src/common/md5.cc; sourceTree = "<group>"; };
+		1632DE8D1C91004800831C59 /* bootstrap_compat.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = bootstrap_compat.cc; path = ../src/common/mac/bootstrap_compat.cc; sourceTree = "<group>"; };
+		168C0A141C8F84860038AE29 /* libbreakpad_client.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbreakpad_client.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		168C0A1B1C8F84C10038AE29 /* breakpad_nlist_64.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = breakpad_nlist_64.cc; path = ../src/client/mac/handler/breakpad_nlist_64.cc; sourceTree = "<group>"; };
+		168C0A1C1C8F84C10038AE29 /* dynamic_images.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dynamic_images.cc; path = ../src/client/mac/handler/dynamic_images.cc; sourceTree = "<group>"; };
+		168C0A1D1C8F84C10038AE29 /* exception_handler.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = exception_handler.cc; path = ../src/client/mac/handler/exception_handler.cc; sourceTree = "<group>"; };
+		168C0A1E1C8F84C10038AE29 /* minidump_generator.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = minidump_generator.cc; path = ../src/client/mac/handler/minidump_generator.cc; sourceTree = "<group>"; };
+		168C0A1F1C8F84C10038AE29 /* protected_memory_allocator.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = protected_memory_allocator.cc; path = ../src/client/mac/handler/protected_memory_allocator.cc; sourceTree = "<group>"; };
+		16E4AA641C8FFEB300ABA7E5 /* arch_utilities.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = arch_utilities.cc; path = ../src/common/mac/arch_utilities.cc; sourceTree = "<group>"; };
+		16E4AA651C8FFEB300ABA7E5 /* string_utilities.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = string_utilities.cc; path = ../src/common/mac/string_utilities.cc; sourceTree = "<group>"; };
+		16E4ACF21C90A6C000ABA7E5 /* QtLibsCommon.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = QtLibsCommon.xcconfig; path = "../../../gopro-util-mac/xcconfig/QtLibsCommon.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		168C0A111C8F84860038AE29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		168C0A0B1C8F84860038AE29 = {
+			isa = PBXGroup;
+			children = (
+				1632DE8D1C91004800831C59 /* bootstrap_compat.cc */,
+				1632DE8B1C91001E00831C59 /* md5.cc */,
+				1632DE891C91000200831C59 /* file_id.cc */,
+				1632DE871C90FF9E00831C59 /* macho_walker.cc */,
+				1632DE851C90FF9500831C59 /* macho_utilities.cc */,
+				1632DE831C90FF5900831C59 /* macho_id.cc */,
+				1632DE811C90FF1F00831C59 /* crash_generation_server.cc */,
+				1632DE7F1C90FF1800831C59 /* crash_generation_client.cc */,
+				1632DE7D1C90FEE300831C59 /* MachIPC.mm */,
+				1632DD621C90FE3F00831C59 /* launch_reporter.cc */,
+				1632DD601C90FE1600831C59 /* simple_string_dictionary.cc */,
+				1632DD5E1C90FD9E00831C59 /* string_conversion.cc */,
+				1632DD5C1C90FD8100831C59 /* convert_UTF.c */,
+				1632DD5A1C90FD6800831C59 /* minidump_file_writer.cc */,
+				16E4ACF21C90A6C000ABA7E5 /* QtLibsCommon.xcconfig */,
+				168C0A1B1C8F84C10038AE29 /* breakpad_nlist_64.cc */,
+				168C0A1C1C8F84C10038AE29 /* dynamic_images.cc */,
+				168C0A1D1C8F84C10038AE29 /* exception_handler.cc */,
+				168C0A1E1C8F84C10038AE29 /* minidump_generator.cc */,
+				168C0A1F1C8F84C10038AE29 /* protected_memory_allocator.cc */,
+				16E4AA641C8FFEB300ABA7E5 /* arch_utilities.cc */,
+				16E4AA651C8FFEB300ABA7E5 /* string_utilities.cc */,
+				168C0A151C8F84860038AE29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		168C0A151C8F84860038AE29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				168C0A141C8F84860038AE29 /* libbreakpad_client.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		168C0A121C8F84860038AE29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		168C0A131C8F84860038AE29 /* breakpad_client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 168C0A181C8F84860038AE29 /* Build configuration list for PBXNativeTarget "breakpad_client" */;
+			buildPhases = (
+				168C0A101C8F84860038AE29 /* Sources */,
+				168C0A111C8F84860038AE29 /* Frameworks */,
+				168C0A121C8F84860038AE29 /* Headers */,
+				16E4AB8B1C90986D00ABA7E5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = breakpad_client;
+			productName = breakpad_client;
+			productReference = 168C0A141C8F84860038AE29 /* libbreakpad_client.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		168C0A0C1C8F84860038AE29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Conrad Herrmann";
+				TargetAttributes = {
+					168C0A131C8F84860038AE29 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 168C0A0F1C8F84860038AE29 /* Build configuration list for PBXProject "breakpad_client" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 168C0A0B1C8F84860038AE29;
+			productRefGroup = 168C0A151C8F84860038AE29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				168C0A131C8F84860038AE29 /* breakpad_client */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		168C0A101C8F84860038AE29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				168C0A241C8F84C10038AE29 /* protected_memory_allocator.cc in Sources */,
+				168C0A221C8F84C10038AE29 /* exception_handler.cc in Sources */,
+				168C0A201C8F84C10038AE29 /* breakpad_nlist_64.cc in Sources */,
+				1632DD631C90FE3F00831C59 /* launch_reporter.cc in Sources */,
+				16E4AA661C8FFEB300ABA7E5 /* arch_utilities.cc in Sources */,
+				16E4AA671C8FFEB300ABA7E5 /* string_utilities.cc in Sources */,
+				1632DE801C90FF1800831C59 /* crash_generation_client.cc in Sources */,
+				1632DE821C90FF1F00831C59 /* crash_generation_server.cc in Sources */,
+				168C0A231C8F84C10038AE29 /* minidump_generator.cc in Sources */,
+				1632DD5B1C90FD6800831C59 /* minidump_file_writer.cc in Sources */,
+				168C0A211C8F84C10038AE29 /* dynamic_images.cc in Sources */,
+				1632DD5D1C90FD8100831C59 /* convert_UTF.c in Sources */,
+				1632DD5F1C90FD9E00831C59 /* string_conversion.cc in Sources */,
+				1632DD611C90FE1600831C59 /* simple_string_dictionary.cc in Sources */,
+				1632DE841C90FF5900831C59 /* macho_id.cc in Sources */,
+				1632DE861C90FF9500831C59 /* macho_utilities.cc in Sources */,
+				1632DE8C1C91001E00831C59 /* md5.cc in Sources */,
+				1632DE8E1C91004800831C59 /* bootstrap_compat.cc in Sources */,
+				1632DE881C90FF9E00831C59 /* macho_walker.cc in Sources */,
+				1632DE8A1C91000200831C59 /* file_id.cc in Sources */,
+				1632DE7E1C90FEE300831C59 /* MachIPC.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		168C0A161C8F84860038AE29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16E4ACF21C90A6C000ABA7E5 /* QtLibsCommon.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		168C0A171C8F84860038AE29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		168C0A191C8F84860038AE29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				OTHER_CFLAGS = "-I../src";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		168C0A1A1C8F84860038AE29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16E4ACF21C90A6C000ABA7E5 /* QtLibsCommon.xcconfig */;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				OTHER_CFLAGS = "-I../src";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		168C0A0F1C8F84860038AE29 /* Build configuration list for PBXProject "breakpad_client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				168C0A161C8F84860038AE29 /* Debug */,
+				168C0A171C8F84860038AE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		168C0A181C8F84860038AE29 /* Build configuration list for PBXNativeTarget "breakpad_client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				168C0A191C8F84860038AE29 /* Debug */,
+				168C0A1A1C8F84860038AE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 168C0A0C1C8F84860038AE29 /* Project object */;
+}
